@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
+//DriverHelper class modified
 public class DriverHelper {
 
     protected static WebDriver driver;
