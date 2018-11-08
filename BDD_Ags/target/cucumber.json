@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24947998271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Filter By Rating",
+        "description": "",
+        "id": "filter;filter-by-rating",
+        "after": [
+          {
+            "result": {
+              "duration": 86613,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 739117542,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on home page",
+            "match": {
+              "location": "SearchStepDef.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7093181907,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for a product \"nike\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nike",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchStepDef.searchForAProduct(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6215252146,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I apply filter \"4or more\" on search result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4or more",
+                  "offset": 16
+                }
+              ],
+              "location": "FilterStepDef.iApplyFilterOnSearchResult(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485624954,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see all the filtered products \"review\" is \"4.0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "review",
+                  "offset": 40
+                },
+                {
+                  "val": "4.0",
+                  "offset": 52
+                }
+              ],
+              "location": "FilterStepDef.iShouldSeeAllProductsAreFiltered(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@regression"
+          },
+          {
+            "line": 7,
+            "name": "@FilterByRate"
+          }
+        ]
+      }
+    ],
+    "name": "Filter",
+    "description": "As an end user\nI want to apply filter on the results\nSo that i can view results of my filter choice",
+    "id": "filter",
+    "keyword": "Feature",
+    "uri": "filter.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@filter"
+      }
+    ]
+  }
+]
